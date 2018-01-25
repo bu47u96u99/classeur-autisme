@@ -14,6 +14,7 @@ pipeline {
             sh '''
             echo "PATH = ${PATH}"
             echo "ANDROID_HOME = ${ANDROID_HOME}"
+            chmod a+x ./gradlew
             '''
          }
     }
