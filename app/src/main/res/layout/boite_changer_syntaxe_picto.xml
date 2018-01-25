@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/LinearLayout1" android:layout_width="fill_parent"
+              android:layout_height="fill_parent" android:orientation="vertical" android:padding="15dip">
+
+    <TextView android:id="@+id/TextView_boite_changer_syntaxe" android:layout_width="wrap_content"
+              android:layout_height="wrap_content" android:paddingBottom="10dip"
+              android:text="Entrer la signification du pictogramme :"/>
+
+    <TextView android:id="@+id/TextView_boite_changer_syntaxe_ancienne_syntaxe"
+              android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="Ancienne signification : "/>
+
+    <EditText android:id="@+id/EditText_boite_changer_syntaxe" android:layout_width="fill_parent"
+              android:layout_height="wrap_content" android:layout_marginTop="16dp" android:ems="10"
+              android:hint="Nouvelle signification ..." android:singleLine="true">
+
+        <requestFocus/>
+    </EditText>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <Button android:id="@+id/bouton_annuler" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_weight="0.45"
+                android:text="Annuler"/>
+
+        <Button android:id="@+id/bouton_ok" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_weight="0.55" android:text="OK"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

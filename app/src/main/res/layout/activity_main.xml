@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+         xmlns:tools="http://schemas.android.com/tools" android:id="@android:id/tabhost"
+         android:layout_width="fill_parent" android:layout_height="fill_parent"
+         android:background="@color/Gray" tools:context=".ActivityMain">
+    <LinearLayout android:id="@+id/zone" android:orientation="vertical"
+                  android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+        <FrameLayout android:id="@android:id/tabcontent" android:layout_width="0dp"
+                     android:layout_height="0dp" android:layout_weight="0"/>
+
+        <android.support.v4.view.ViewPager android:id="@+id/viewpager"
+                                           android:layout_width="fill_parent" android:layout_height="0dp"
+                                           android:layout_weight="1"/>
+
+        <TabWidget android:id="@android:id/tabs" android:layout_width="match_parent"
+                   android:layout_height="0dip" android:layout_weight="0.15"/>
+
+        <LinearLayout android:baselineAligned="false" android:layout_width="match_parent"
+                      android:layout_height="0dp" android:layout_weight="0.45">
+
+            <LinearLayout android:id="@+id/bande_scotch" android:layout_width="0dp"
+                          android:layout_height="fill_parent" android:background="@drawable/phrase"
+                          android:columnCount="8" android:orientation="horizontal" android:padding="5dp"
+                          android:rowCount="1" android:baselineAligned="false" android:layout_weight="0.8">
+
+                <LinearLayout android:id="@+id/layoutBarre1" android:layout_width="0dp"
+                              android:layout_height="match_parent" android:layout_gravity="start"
+                              android:orientation="vertical" android:layout_weight="0.16">
+
+                    <ImageView android:contentDescription="@string/description"
+                               android:id="@+id/imageBarre1" android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:layout_margin="@dimen/bande_phrase_picto_marge_gauche"
+                               android:scaleType="fitCenter" android:visibility="visible"/>
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/layoutBarre2" android:layout_width="0dp"
+                              android:layout_height="match_parent" android:layout_gravity="start"
+                              android:orientation="vertical" android:layout_weight="0.16">
+
+                    <ImageView android:id="@+id/imageBarre2"
+                               android:contentDescription="@string/description"
+                               android:layout_width="fill_parent" android:layout_height="fill_parent"
+                               android:layout_margin="@dimen/bande_phrase_picto_marge_droite"
+                               android:scaleType="fitCenter" android:visibility="visible"/>
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/layoutBarre3" android:layout_width="0dp"
+                              android:layout_height="match_parent" android:layout_gravity="start"
+                              android:orientation="vertical" android:layout_weight="0.16">
+
+                    <ImageView android:id="@+id/imageBarre3"
+                               android:contentDescription="@string/description"
+                               android:layout_width="fill_parent" android:layout_height="fill_parent"
+                               android:layout_margin="@dimen/bande_phrase_picto_marge_droite"
+                               android:scaleType="fitCenter" android:visibility="visible"/>
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/layoutBarre4" android:layout_width="0dp"
+                              android:layout_height="match_parent" android:layout_gravity="start"
+                              android:orientation="vertical" android:layout_weight="0.16">
+
+                    <ImageView android:id="@+id/imageBarre4"
+                               android:contentDescription="@string/description"
+                               android:layout_width="fill_parent" android:layout_height="fill_parent"
+                               android:layout_margin="@dimen/bande_phrase_picto_marge_droite"
+                               android:scaleType="fitCenter" android:visibility="visible"/>
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/layoutBarre5" android:layout_width="0dp"
+                              android:layout_height="match_parent" android:layout_gravity="start"
+                              android:orientation="vertical" android:layout_weight="0.16">
+
+                    <ImageView android:id="@+id/imageBarre5"
+                               android:contentDescription="@string/description"
+                               android:layout_width="fill_parent" android:layout_height="fill_parent"
+                               android:layout_margin="@dimen/bande_phrase_picto_marge_droite"
+                               android:scaleType="fitCenter" android:visibility="visible"/>
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/layoutBarre6" android:layout_width="0dp"
+                              android:layout_height="match_parent" android:layout_gravity="start"
+                              android:orientation="vertical" android:layout_weight="0.16">
+
+                    <ImageView android:id="@+id/imageBarre6"
+                               android:contentDescription="@string/description"
+                               android:layout_width="fill_parent" android:layout_height="fill_parent"
+                               android:layout_margin="@dimen/bande_phrase_picto_marge_droite"
+                               android:scaleType="fitCenter" android:visibility="visible"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/layoutBarreBouton" android:layout_width="0dp"
+                          android:layout_height="match_parent" android:orientation="horizontal"
+                          android:layout_weight="0.13">
+
+                <ImageButton android:id="@+id/bouton_clear_barre"
+                             android:contentDescription="@string/description" android:layout_width="0dp"
+                             android:layout_height="match_parent"
+                             android:background="@drawable/bouton_retour_selector"
+                             android:layout_weight="0.33"/>
+
+                <ImageButton android:id="@+id/bouton_menu"
+                             android:contentDescription="@string/description" android:layout_width="0dp"
+                             android:layout_height="match_parent"
+                             android:background="@drawable/bouton_menu_selector"
+                             android:layout_weight="0.33"/>
+
+                <ImageButton android:id="@+id/bouton_phrase"
+                             android:contentDescription="@string/description" android:layout_width="0dp"
+                             android:layout_height="match_parent"
+                             android:background="@drawable/bouton_son_selector"
+                             android:layout_weight="0.33"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</TabHost>

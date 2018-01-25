@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Classeur Autisme Android</string>
+    <string name="apropos">Application développée par Margot DELCROIX et Mikaël BOUCHER dans le
+        cadre d\'un projet organisé par l\'ISEN Brest.
+    </string>
+    <string name="description">description</string>
+</resources>

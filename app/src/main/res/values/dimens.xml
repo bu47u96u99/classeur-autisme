@@ -1,0 +1,27 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="intercalaire_picto_hauteur">180dp</dimen>
+    <dimen name="intercalaire_picto_largeur">180dp</dimen>
+    <dimen name="intercalaire_picto_marge_droite">65dp</dimen>
+    <dimen name="intercalaire_picto_marge_gauche">65dp</dimen>
+    <dimen name="bande_phrase_picto_largeur">180dp</dimen>
+    <dimen name="bande_phrase_picto_hauteur">180dp</dimen>
+    <dimen name="bande_phrase_picto_marge_droite">10dp</dimen>
+    <dimen name="bande_phrase_picto_marge_gauche">10dp</dimen>
+    <dimen name="bande_phrase_picto_marge_top">10dp</dimen>
+    <dimen name="bande_phrase_picto_marge_bottom">10dp</dimen>
+
+    <dimen name="intercalaire_picto_hauteur_1080">120dp</dimen>
+    <dimen name="intercalaire_picto_largeur_1080">120dp</dimen>
+    <dimen name="intercalaire_picto_marge_droite_1080">65dp</dimen>
+    <dimen name="intercalaire_picto_marge_gauche_1080">65dp</dimen>
+    <dimen name="bande_phrase_picto_largeur_1080">120dp</dimen>
+    <dimen name="bande_phrase_picto_hauteur_1080">120dp</dimen>
+    <dimen name="bande_phrase_picto_marge_droite_1080">5dp</dimen>
+    <dimen name="bande_phrase_picto_marge_gauche_1080">5dp</dimen>
+    <dimen name="bande_phrase_picto_marge_top_1080">5dp</dimen>
+    <dimen name="bande_phrase_picto_marge_bottom_1080">5dp</dimen>
+</resources>

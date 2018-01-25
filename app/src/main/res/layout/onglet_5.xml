@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/layoutGrid5" android:layout_width="fill_parent"
+              android:layout_height="fill_parent" android:background="@drawable/intercalaire_bleufonce"
+              android:orientation="vertical">
+
+    <LinearLayout android:layout_width="fill_parent" android:orientation="horizontal"
+                  android:layout_weight="0.5" android:layout_height="0dp" android:baselineAligned="false">
+
+        <LinearLayout android:id="@+id/layout_picto1_5" android:layout_gravity="start"
+                      android:orientation="vertical" android:layout_width="0dp"
+                      android:layout_height="match_parent" android:layout_weight="0.25">
+
+            <ImageView android:id="@+id/pictogramme1_5"
+                       android:contentDescription="@string/description" android:scaleType="fitCenter"
+                       android:layout_width="match_parent" android:layout_height="match_parent"
+                       android:visibility="visible" android:layout_margin="15dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/layout_picto3_5" android:layout_width="0dp"
+                      android:layout_gravity="left|top" android:orientation="vertical"
+                      android:layout_height="match_parent" android:layout_weight="0.25">
+
+            <ImageView android:id="@+id/pictogramme3_5"
+                       android:contentDescription="@string/description" android:scaleType="fitCenter"
+                       android:layout_width="match_parent" android:layout_height="match_parent"
+                       android:visibility="visible" android:layout_margin="15dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/layout_picto5_5" android:layout_gravity="left|top"
+                      android:orientation="vertical" android:layout_width="0dp"
+                      android:layout_height="match_parent" android:layout_weight="0.25">
+
+            <ImageView android:id="@+id/pictogramme5_5"
+                       android:contentDescription="@string/description" android:scaleType="fitCenter"
+                       android:layout_width="match_parent" android:layout_height="match_parent"
+                       android:visibility="visible" android:layout_margin="15dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/layout_picto7_5" android:layout_width="0dp"
+                      android:layout_gravity="fill_horizontal|top" android:orientation="vertical"
+                      android:layout_height="match_parent" android:layout_weight="0.25">
+
+            <ImageView android:id="@+id/pictogramme7_5"
+                       android:contentDescription="@string/description" android:scaleType="fitCenter"
+                       android:layout_width="match_parent" android:layout_height="match_parent"
+                       android:visibility="visible" android:layout_margin="15dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="fill_parent" android:orientation="horizontal"
+                  android:layout_weight="0.5" android:layout_height="0dp" android:baselineAligned="false">
+
+
+        <LinearLayout android:id="@+id/layout_picto2_5" android:layout_gravity="left|top"
+                      android:orientation="vertical" android:layout_width="0dp"
+                      android:layout_height="match_parent" android:layout_weight="0.25">
+
+            <ImageView android:id="@+id/pictogramme2_5"
+                       android:contentDescription="@string/description" android:scaleType="fitCenter"
+                       android:layout_width="match_parent" android:layout_height="match_parent"
+                       android:visibility="visible" android:layout_margin="15dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/layout_picto4_5" android:layout_gravity="left|top"
+                      android:orientation="vertical" android:layout_width="0dp"
+                      android:layout_height="match_parent" android:layout_weight="0.25">
+
+            <ImageView android:id="@+id/pictogramme4_5"
+                       android:contentDescription="@string/description" android:scaleType="fitCenter"
+                       android:layout_width="match_parent" android:layout_height="match_parent"
+                       android:visibility="visible" android:layout_margin="15dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/layout_picto6_5" android:layout_gravity="left|top"
+                      android:orientation="vertical" android:layout_width="0dp"
+                      android:layout_height="match_parent" android:layout_weight="0.25">
+
+            <ImageView android:id="@+id/pictogramme6_5"
+                       android:contentDescription="@string/description" android:scaleType="fitCenter"
+                       android:layout_width="match_parent" android:layout_height="match_parent"
+                       android:visibility="visible" android:layout_margin="15dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/layout_picto8_5" android:layout_width="0dp"
+                      android:layout_gravity="fill_horizontal|top" android:orientation="vertical"
+                      android:layout_height="match_parent" android:layout_weight="0.25">
+
+            <ImageView android:id="@+id/pictogramme8_5"
+                       android:contentDescription="@string/description" android:scaleType="fitCenter"
+                       android:layout_width="match_parent" android:layout_height="match_parent"
+                       android:visibility="visible" android:layout_margin="15dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="Son" android:key="son">
+
+        <CheckBoxPreference android:title="Activez le son"
+                            android:summary="Cette option va vous permettre d'avoir la synthèse vocale"
+                            android:key="checkbox_son"/>
+
+        <ovh.polaris.classeurautisme.ui.widgets.SeekBarDialogPreference
+                android:summary="Selectionnez la vitesse d'élocution"
+                android:key="SeekBarDialogPreference"
+                android:dialogMessage="Selectionnez la vitesse d'élocution :" android:max="150"
+                android:title="Vitesse d'élocution" custom:progressTextSuffix="%" custom:min="50"/>
+
+        <ListPreference android:key="liste_mode_son" android:title="Mode de son"
+                        android:summary="Sélectionner le mode de son" android:entries="@array/liste_son"
+                        android:entryValues="@array/liste_son_values"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Mot de passe" android:key="mot_de_passe">
+
+        <CheckBoxPreference android:title="Activez le mot de passe" android:defaultValue="false"
+                            android:summary="Activation du mot de passe" android:key="checkbox_mot_de_passe"/>
+
+        <Preference android:title="Mot de Passe" android:key="edit_text_mot_de_passe"
+                    android:summary="Changer le mot de passe"/>
+
+        <ovh.polaris.classeurautisme.ui.widgets.SeekBarDialogPreference
+                android:summary="Selectionner le temps d'affichage du mot de passe"
+                android:key="numberPickerDialogPreference_mdp"
+                android:dialogMessage="Selectionner le temps d'affichage du mot de passe :"
+                android:max="10" custom:progressTextSuffix="s" android:title="Temps d'affichage"
+                custom:min="3"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Profils" android:key="profils">
+
+        <Preference android:title="Sauvegarder la configuration" android:key="bouton_save"
+                    android:summary="Les pictogrammes et leurs emplacements seront sauvegardés"/>
+
+        <ListPreference android:key="liste_profils" android:title="Choix du profil"
+                        android:defaultValue="0" android:summary="Charger une configuration enregistrée"/>
+
+        <ListPreference android:key="liste_profils_suppr" android:title="Supprimer un profil"
+                        android:summary="Supprimer une configuration enregistrée"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Pictogrammes" android:key="Pictogrammes">
+
+        <Preference android:title="Retirer tous les pictogrammes" android:key="bouton_raz"
+                    android:summary="Les pictogrammes seront supprimés"/>
+
+        <CheckBoxPreference android:title="Activer le zoom" android:key="checkbox_zoom"
+                            android:summary="Le zoom lors de l'appui prolongé sera activé"/>
+
+        <ovh.polaris.classeurautisme.ui.widgets.SeekBarDialogPreference
+                android:summary="Sélectionnez le délai d'affichage du zoom"
+                android:key="numberPickerDialogPreference_zoom" custom:progressTextSuffix="s"
+                android:dialogMessage="Sélectionnez le délai d'affichage du zoom" android:max="3"
+                custom:min="1" android:title="Délai du zoom"/>
+
+        <ovh.polaris.classeurautisme.ui.widgets.SeekBarDialogPreference
+                android:summary="Sélectionnez la sensibilité"
+                android:key="numberPickerDialogPreference_sens"
+                android:dialogMessage="Sélectionnez la sensibilité d'affichage du zoom" android:max="5"
+                custom:min="1" android:title="Sensibilité du zoom"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="A propos">
+        <Preference android:title="A propos de l'application" android:key="a_propos"
+                    android:summary="A propos de l'application"/>
+    </PreferenceCategory>
+</PreferenceScreen>
