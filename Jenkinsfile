@@ -52,7 +52,7 @@ pipeline {
 
   post {
     failure {
-       mail bcc: '', body: 'Build failure on project Classeur-autisme', cc: '', from: 'jenkins@polaris.ovh', replyTo: '', subject: '[JENKINS] Build failure on project Mobifresh', to: 'admin@polaris.ovh'
+       mail bcc: '', body: 'Build failure on project Classeur-autisme', cc: '', from: 'Jenkins <jenkins@polaris.ovh>', replyTo: '', subject: '[JENKINS] Build failure on project Classeur autisme', to: 'admin@polaris.ovh'
     }
   }
 }
