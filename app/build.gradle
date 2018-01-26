@@ -6,6 +6,9 @@ android {
 
     repositories {
         maven {
+            url "https://nexus.polaris.ovh/repository/maven-public/"
+        }
+        maven {
             url "https://plugins.gradle.org/m2/"
         }
     }
