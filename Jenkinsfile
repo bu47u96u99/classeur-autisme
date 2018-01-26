@@ -13,10 +13,9 @@ pipeline {
         steps {
             sh '''
             echo "PATH = ${PATH}"
-            echo "ANDROID_HOME = ${ANDROID_HOME}"
             chmod a+x ./gradlew
             touch local.properties
-            echo "sdk.dir=${ANDROID_HOME}" > local.properties
+            echo "sdk.dir=/opt/android-sdk" > local.properties
             '''
          }
     }
