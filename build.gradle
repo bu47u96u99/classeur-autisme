@@ -5,6 +5,9 @@ buildscript {
         maven {
             url "https://nexus.polaris.ovh/repository/maven-public/"
         }
+        maven {
+            url 'https://maven.google.com'
+        }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.1'
@@ -18,4 +21,8 @@ allprojects {
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+
+repositories {
+    google()
 }
