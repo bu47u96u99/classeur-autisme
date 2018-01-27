@@ -46,7 +46,8 @@ pipeline {
 
     stage('Archive') {
         steps {
-            archiveArtifacts(artifacts: 'app//build//outputs//apk//debug//apk-debug.apk', onlyIfSuccessful: true)
+            sh 'echo "no archive"'
+            //archiveArtifacts(artifacts: 'app//build//outputs//apk//debug//apk-debug.apk', onlyIfSuccessful: true)
         }
     }
   }
