@@ -34,7 +34,9 @@ pipeline {
 
     stage('Analyse') {
         steps {
-            sh 'echo "no tests"'
+            withSonarQubeEnv('sonar') {
+                sh './gradlew sonar'
+            }
         }
     }
 
